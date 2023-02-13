@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Inconsolata-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+	  
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+.question {
+  font-size: 32px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.option {
+  padding: 10px 20px;
+  background-color: #FFC0CB;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.text {
+  font-size: 18px;
+  text-align: center;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+  </style>
+</body>
+
+<body>
+	<div class="credit" style="font-family: 'Inconsolata'; position: absolute; bottom: 0; left: 0; text-align:left;">
+    Created by R. with ❤️ for Aurora.
+  </div>
+  <div class="container">
+    <div class="question" id="question1">Do you love me?</div>
+    <div class="options" id="options1">
+      <div class="option" onclick="showQuestion2()">Yes</div>
+      <div class="option" onclick="location.href='no.html'">No</div>
+    </div>
+    <div class="question hide" id="question2">Will you love me forever?</div>
+    <div class="options hide" id="options2">
+      <div class="option" onclick="location.href='yes.html'">Yes</div>
+      <div class="option" onclick="alert('Lebih baik merasa dicintai dan kehilangan daripada tidak pernah dicintai sama sekali.\n\n—Sheldon J. Plankton')">No</div>
+    </div>
+	</div>
+  <script>
+    function showQuestion2() {
+      document.getElementById("question1").classList.add("hide");
+      document.getElementById("options1").classList.add("hide");
+      document.getElementById("question2").classList.remove("hide");
+      document.getElementById("options2").classList.remove("hide");
+    }
+  </script>
+</body>
+</html>

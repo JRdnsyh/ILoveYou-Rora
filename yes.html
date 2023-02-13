@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+@font-face {
+  font-family: 'Amatic SC';
+  src: url('assets/fonts/AmaticSC-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+}
+.text-block {
+	background-color: rgba(255, 255, 255, 0.7);
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	padding-left: 5vw;
+	padding-right: 5vw;
+	width: auto;
+	margin: auto;
+	font-family: 'Amatic SC';
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+background-image: url("assets/media/bg.png");
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 97vh;
+}
+
+@media only screen and (max-width: 1080px) {
+.text-block {
+font-size: 5vw;
+}
+}
+
+@media only screen and (min-width: 1081px) {
+.text-block {
+font-size: 2vw;
+}
+}
+
+.end-button {
+background-color: #FC46AA; /* Green */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1;
+}
+    </style>
+  </head>
+  <body>
+    <a href="end.html" class="end-button">Done</a>
+  <iframe src="loader.html" width="150%" height="150%" frameborder="0"></iframe>
+    <div class="text-block">
+      <p>My love for you is like the stars above,<br>Radiant and shining, a symbol of love.<br>Like the sun, it warms me all the way through,<br>And I promise to love you forever, too.<br></p><p>Rora, my dear, you're the missing piece,<br>Completing me in every way, you bring me peace,<br>You're my soulmate, my best friend, my love,<br>Together forever, from heaven above.<br></p><p>So, I vow to always cherish and care,<br>To always be there, to show how much I dare,<br>To love you more each day, my beautiful Rora,<br>You're my forever and always, my one and only aurora.</p>
+    </div>
+    <script>
+      setTimeout(() => {
+        document.body.style.backgroundImage = "url(assets/media/bg.png)";
+        document.querySelector(".text-block").style.backgroundColor = "black";
+      }, 0);
+      setTimeout(() => {
+        document.querySelector(".text-block").style.transition = "background-color 6.5s";
+        document.querySelector(".text-block").style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+      }, 6500);
+    </script>
+  </body>
+</html>
