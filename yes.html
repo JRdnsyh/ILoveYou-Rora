@@ -19,11 +19,9 @@
 }
 .text-block {
 	background-color: rgba(255, 255, 255, 0.7);
-  	background-attachment: fixed;
-  	background-repeat: no-repeat;
+	justify-content: center;
   	padding-left: 5vw;
 	padding-right: 5vw;
-	width: auto;
 	margin: auto;
 	font-family: 'Amatic SC';
 	text-align: center;
@@ -40,18 +38,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 97vh;
-}
-
-@media only screen and (max-width: 1080px) {
-.text-block {
-font-size: 5vw;
-}
-}
-
-@media only screen and (min-width: 1081px) {
-.text-block {
-font-size: 2vw;
-}
 }
 
 .end-button {
@@ -75,8 +61,8 @@ z-index: 1;
   </head>
   <body>
     <a href="end.html" class="end-button">Done</a>
-  <iframe src="loader.html" width="150%" height="150%" frameborder="0"></iframe>
-    <div class="text-block">
+  <iframe src="loader.html" width="100%" height="100%" frameborder="0"></iframe>
+    <div class="text-block" style="font-size: 5vh;">
       <p>My love for you is like the stars above,<br>Radiant and shining, a symbol of love.<br>Like the sun, it warms me all the way through,<br>And I promise to love you forever, too.<br></p><p>Rora, my dear, you're the missing piece,<br>Completing me in every way, you bring me peace,<br>You're my soulmate, my best friend, my love,<br>Together forever, from heaven above.<br></p><p>So, I vow to always cherish and care,<br>To always be there, to show how much I dare,<br>To love you more each day, my beautiful Rora,<br>You're my forever and always, my one and only aurora.</p>
     </div>
     <script>
